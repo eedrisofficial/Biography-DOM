@@ -8,14 +8,14 @@ const jsDisplay = document.getElementById("displayJavaScript");
 // Add an onClick eventlistener to the update button
 toggleButton.addEventListener("click", function () {
   // Checking the current visibility of the tags
-  const ishtmlDisplayVisible = htmlDisplay.style.display !== "none";
-  const isjsDisplayVisible = jsDisplay.style.display !== "none";
+  const isDisplayHtml = htmlDisplay.style.display !== "none";
+  const isDisplayJs = jsDisplay.style.display !== "none";
 
   // conditional statement for alternative display
-  if (ishtmlDisplayVisible) {
+  if (isDisplayHtml) {
     htmlDisplay.style.display = "none";
     jsDisplay.style.display = "block";
-  } else if (isjsDisplayVisible) {
+  } else if (isDisplayJs) {
     htmlDisplay.style.display = "block";
     jsDisplay.style.display = "none";
   }
